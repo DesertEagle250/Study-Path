@@ -13,22 +13,20 @@
     
 <body>
 <br>
-<form>
-<label>Name:<input type="text"></label><br>
-<br>
-<label><input type="checkbox">Do you consider the layout clean and legible?</label><br>
-<label><input type="checkbox">Do you consider this site to be easy to navigate?</label><br>
-<label><input type="checkbox">Do you consider the information on the site useful?</label><br>
-<label><input type="checkbox">Select this box if the website functioned as intended, without any glitches.</label><br>
-<label><input type="checkbox">Do you consider the site's design adequat to its purpose?</label><br>
-<label><input type="checkbox">(Answer if you have joined using a phone or a tablet) Did the site work correctly on your device?</label><br>
-<label><input type="checkbox">(Answer if you have joined using a compuer) Did the site work correctly on your device?</label><br>
-<br>
-<label>Feedback: <br>
-    <textarea></textarea></label> 
-<br>
-<input type="submit" value="Sumbit" style="background-color: rgb(71, 248, 27); color: rgb(0, 0, 0);">
-</form>
+<form id="feedback-form" action="https://formspree.io/f/xyzkdeew" method="POST">
+    <label>Name:<input type="text" name="name"></label><br><br>
+    <label><input type="checkbox" name="layout_clean">Do you consider the layout clean and legible?</label><br>
+    <label><input type="checkbox" name="easy_navigation">Do you consider this site to be easy to navigate?</label><br>
+    <label><input type="checkbox" name="useful_info">Do you consider the information on the site useful?</label><br>
+    <label><input type="checkbox" name="no_glitches">Select this box if the website functioned as intended, without any glitches.</label><br>
+    <label><input type="checkbox" name="design_adequate">Do you consider the site's design adequate to its purpose?</label><br>
+    <label><input type="checkbox" name="mobile_working">Did the site work correctly on your device? (Answer if you have joined using a phone or a tablet)</label><br>
+    <label><input type="checkbox" name="desktop_working">Did the site work correctly on your device? (Answer if you have joined using a computer)</label><br><br>
+    <label>Feedback: <br>
+      <textarea name="feedback"></textarea>
+    </label><br>
+    <button type="submit">Send</button>
+  </form>
 <br>
 <section>Thank You</section>
 <img src="feedback.jpg" alt="Positioned Image" width="200" style="position: absolute; top: 225px; left: 180px;">
